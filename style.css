@@ -1,0 +1,32 @@
+*{box-sizing: border-box;}
+
+
+#images-list {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#images-list .img-block {
+    width: 33%;
+    margin-bottom: 25px;
+    border-left: 15px solid white;
+    border-right: 15px solid white;
+    position: relative;
+}
+
+#images-list .img-block img {
+  width: 100%;
+}
+
+#images-list .img-block .wrap-desc {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 15px;
+}
+
+.open .wrap-desc {
+  z-index: 5;
+}
